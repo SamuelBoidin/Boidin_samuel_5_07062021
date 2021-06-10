@@ -10,8 +10,9 @@
     <title>Panier</title>
 </head>
 <body>
+    <!--header/nav-->
     <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg bg-white navbar-light d-flex flex-column">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light d-flex flex-column shadow">
             <a class="navbar-brand" href="#">
                 <img class="img-fluid" src="/images/logo.png" alt="logo orinoco">
             </a>
@@ -31,12 +32,124 @@
         </nav>
     </header>
     <main>
-
-
-
-
-
-
+        <!--panier vide-->
+        <section>
+            <div class="container my-2 py-2">
+                <div class="text-center my-5 shadow p-3 mb-5 bg-body rounded">
+                    <h1 class="display-5 font-weight-bold text-dark my-4">Oups, votre panier semble vide, commencez vos achats :)
+                    </h1>
+                    <a role="button" class="btn btn-primary font-weight-bold my-3" href="/index.html">Découvrez nos produits ici</a>
+                </div>
+            </div>
+        </section>
+        <!--panier-->
+        <section class="container">
+            <div class="table-responsive">
+                <table class="table table-hover shadow">
+                    <thead>
+                        <tr>
+                            <th scope="col">Produit</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Lentille</th>
+                            <th scope="col">Quantité</th>
+                            <th scope="col">Prix</th>
+                            <th scope="col">Sous-total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                     <!--récupération js du panier-->
+                    </tbody>
+                    <tfoot>
+                        <tr class="">
+                            <th colspan="4"></th>
+                            <th colspan="1">Total :</th>
+                            <th colspan="1" id="">test</th>
+                        </tr>
+                    </tfoot>
+                  </table>
+              </div>
+              <div class="text-center my-5 row" id="">
+                <div class="col-12 col-sm-6 my-4">
+                    <button type="button" class="btn btn-danger mx-5" id="">Vider le panier</button>
+                </div>
+                <div class="col-12 col-sm-6 my-4">
+                    <button type="submit" class="btn btn-success mx-5" data-toggle="modal" data-target="#modalClearBasket">Valider le panier</button>
+                </div>
+            </div>
+        </section>
+        <!--formulaire client-->
+        <section class="container mb-5 font-weight-bold">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nom</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Prénom</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress">Adresse</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Complément d'adresse</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">Ville</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState">Région</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Code postal</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">Accepter les termes et conditions de vente</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary font-weight-bold">Confirmer</button>              
+                </div>
+            </form>
+        </section>
+        <!--fenêtre de dialogue-->
+        <div class="modal fade" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="">Suppression du panier</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Voulez-vous vraiment supprimer le panier</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger">Non</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Oui</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="py-4 shadow-lg bg-dark text-light">
         <ul class="list-inline text-center">

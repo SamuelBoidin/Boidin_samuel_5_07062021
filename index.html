@@ -33,7 +33,7 @@
     </header>
     <main>
         <!--section du carousel-->
-        <section id="carouselContent" class="carousel slide" data-ride="carousel">
+        <section id="carouselContent" class="carousel slide shadow" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselContent" data-slide-to="0" class="active"></li>
               <li data-target="#carouselContent" data-slide-to="1"></li>
@@ -73,69 +73,49 @@
         </section>
         <!--section des cards-->
         <section class="container-fluid text-center">
-            <div class="row d-flex flex-row d-flex flex-row justify-content-around">
+            <div class="row d-flex flex-row d-flex flex-row justify-content-around mt-5">
                 <div class="card col-sm-12 col-md-5 col-lg-5 mb-5 shadow rounded pt-3">
                     <img class="card-img-top img-fluid" src="/images/vcam_1.jpg" alt="caméra zurss 50s">
                     <div class="card-body">
-                        <h5 class="card-title">non du produit</h5>
-                        <p class="card-text">description.</p>
-                        <p class="card-text">prix</p>
-                        <a href="#" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
-                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
-                            </svg>
-                        </a>
+                        <h5 class="card-title">nom du produit</h5><!--récupération js du nom produit-->
+                        <p class="card-text">déscription.</p><!--récupération js carte du de la dèscription du produit-->
+                        <p class="card-text">prix</p><!--récupération js du prix du produit-->
                         <a href="#" class="btn btn-primary">Voir ce produit</a>
                     </div>
                 </div>
                 <div class="card col-sm-12 col-md-5 col-lg-5 mb-5 shadow rounded pt-3">
                     <img class="card-img-top img-fluid" src="/images/vcam_2.jpg" alt="caméra hirsch 400dts">
                     <div class="card-body">
-                        <h5 class="card-title">non du produit</h5>
-                        <p class="card-text">description.</p>
-                        <p class="card-text">prix</p>
-                        <a href="#" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
-                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="btn btn-primary">Voir ce produit</a>
+                        <h5 class="card-title">nom du produit</h5><!--récupération js du nom produit-->
+                        <p class="card-text">déscription.</p><!--récupération js carte du de la dèscription du produit-->
+                        <p class="card-text">prix</p><!--récupération js du prix du produit-->
+                        <a href="/product.html" class="btn btn-primary">Voir ce produit</a>
                     </div>
                 </div>
                 <div class="card col-sm-12 col-md-5 col-lg-5 mb-5 shadow rounded pt-3">
                     <img class="card-img-top img-fluid " src="/images/vcam_3.jpg" alt="caméra franck js 105">
                     <div class="card-body">
-                        <h5 class="card-title">non du produit</h5>
-                        <p class="card-text">description.</p>
-                        <p class="card-text">prix</p>
-                        <a href="#" class="btn btn-success text-right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
-                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
-                          </svg>
-                        </a>
+                        <h5 class="card-title">nom du produit</h5><!--récupération js du nom produit-->
+                        <p class="card-text">déscription.</p><!--récupération js carte du de la dèscription du produit-->
+                        <p class="card-text">prix</p><!--récupération js du prix du produit-->
                         <a href="#" class="btn btn-primary">Voir ce produit</a>
                     </div>
                 </div>
                 <div class="card col-sm-12 col-md-5 col-lg-5 mb-5 shadow rounded pt-3">
                     <img class="card-img-top img-fluid" src="/images/vcam_4.jpg" alt="caméra kuros tts">
                     <div class="card-body">
-                        <h5 class="card-title">non du produit</h5>
-                        <p class="card-text">description.</p>
-                        <p class="card-text">prix</p>
-                        <a href="#" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
-                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
-                          </svg>
-                        </a>
+                        <h5 class="card-title">nom du produit</h5><!--récupération js du nom produit-->
+                        <p class="card-text">déscription.</p><!--récupération js carte du de la dèscription du produit-->
+                        <p class="card-text">prix</p><!--récupération js du prix du produit-->
                         <a href="#" class="btn btn-primary">Voir ce produit</a>
                     </div>
                 </div>
                 <div class="card col-sm-12 col-md-5 col-lg-5 mb-5 shadow rounded pt-3">
                     <img class="card-img-top img-fluid" src="/images/vcam_5.jpg" alt="caméra katatone">
                     <div class="card-body">
-                        <h5 class="card-title">non du produit</h5>
-                        <p class="card-text">description.</p>
-                        <p class="card-text">prix</p>
-                        <a href="#" class="btn btn-success "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
-                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
-                          </svg>
-                        </a>
+                        <h5 class="card-title">nom du produit</h5><!--récupération js du nom produit-->
+                        <p class="card-text">déscription.</p><!--récupération js carte du de la dèscription du produit-->
+                        <p class="card-text">prix</p><!--récupération js du prix du produit-->
                         <a href="#" class="btn btn-primary">Voir ce produit</a>
                     </div>
                 </div>
@@ -143,12 +123,12 @@
         </section> 
     </main>
     <!--footer-->
-    <footer class="bg-light py-4 shadow">
+    <footer class="py-4 shadow-lg bg-dark text-light">
         <ul class="list-inline text-center">
-            <li class="list-inline-item"><a href="index.html" title="Accueil">Accueil</a></li>
-            <li class="list-inline-item"><a href="mailto:orinoco@mail.com?subject=Contact" title="Contact">Contact</a>
+            <li class="list-inline-item"><a href="index.html" title="Accueil" class="text-light">Accueil</a></li>
+            <li class="list-inline-item"><a href="mailto:orinoco@mail.com?subject=Contact" title="Contact" class="text-light">Contact</a>
             </li>
-            <li class="list-inline-item"><a href="#" title="Mentions Légales">Mentions Légales</a></li>
+            <li class="list-inline-item"><a href="#" title="Mentions Légales" class="text-light">Mentions Légales</a></li>
         </ul>
         <ul class="list-inline text-center">
             <li class="list-inline-item">
